@@ -27,6 +27,7 @@ function Form() {
           score: parseInt(score),
         }
       );
+      alert("added candidate!");
       console.log(JSON.stringify(res));
     } catch (err) {
       console.log("error while uploading form frontend : " + err);
