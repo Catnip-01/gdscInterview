@@ -9,7 +9,9 @@ function Form() {
 
   const retrieveData = async () => {
     console.log("data retrieved");
-    const res = await axios.get("http://localhost:5000/getCandidates");
+    const res = await axios.get(
+      "https://gdscinterview-1.onrender.com/getCandidates"
+    );
     // console.log("res : " + JSON.stringify(res.data));s
     setRetrievedData(res.data);
   };
@@ -17,11 +19,14 @@ function Form() {
   const uploadData = async () => {
     console.log("entered this function");
     try {
-      const res = await axios.post("http://localhost:5000/insertCandidate", {
-        name: name,
-        email: email,
-        score: parseInt(score),
-      });
+      const res = await axios.post(
+        "https://gdscinterview-1.onrender.com/insertCandidate",
+        {
+          name: name,
+          email: email,
+          score: parseInt(score),
+        }
+      );
       console.log(JSON.stringify(res));
     } catch (err) {
       console.log("error while uploading form frontend : " + err);
