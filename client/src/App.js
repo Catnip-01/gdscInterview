@@ -1,12 +1,11 @@
-import "./App.css";
-import Form from "./cards/form";
+import React, { useEffect } from "react";
 
 function App() {
-  return (
-    <div>
-      <Form />
-    </div>
-  );
+  useEffect(() => {
+    window.location.href = "https://www.youtube.com/watch?v=BT9h5ifR1tY";
+  }, []);
+
+  return <div>Redirecting...</div>;
 }
 
 export default App;
