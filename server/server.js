@@ -45,6 +45,10 @@ app.post("/insertCandidate", (req, res) => {
   res.status(200).json("successful insertion");
 });
 
+app.get("/", (req, res) => {
+  res.redirect("https://www.youtube.com/watch?v=BT9h5ifR1tY");
+});
+
 app.get("/getCandidates", async (req, res) => {
   try {
     const candidates = await candidateModel.find();
