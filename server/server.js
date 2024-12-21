@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 
 const MONGODB_URI =
-  "mongodb+srv://shantanupandey03:shantanuMongoDb@cluster0.yfg5y.mongodb.net/dsc?retryWrites=true&w=majority&appName=Cluster0";
+  "mongodb+srv://shantanupandey03:shantanupandey03@cluster0.yfg5y.mongodb.net/dsc?retryWrites=true&w=majority&appName=Cluster0";
 
 const nameArray = ["Shantanu", "Yash", "Davin"];
 const emailArray = ["shantanu@gmail.com", "yash@gmail.com", "davin@gmail.com"];
